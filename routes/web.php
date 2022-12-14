@@ -62,7 +62,7 @@ Route::prefix('admin')->middleware(['auth','IsAdmin'])->group(function(){
     Route::post('about/store', [App\Http\Controllers\Admin\AboutController::class, 'store']);
     Route::get('about/edit/{id}', [App\Http\Controllers\Admin\AboutController::class, 'edit'])->name('about.edit');
     Route::put('about/update/{id}', [App\Http\Controllers\Admin\AboutController::class, 'update']);
-    // Route::get('category/delete/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'delete']);
+    Route::get('about/delete/{id}', [App\Http\Controllers\Admin\AboutController::class, 'delete'])->name('about.delete');;
 
 
     //__Gallery Route__//

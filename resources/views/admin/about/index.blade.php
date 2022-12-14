@@ -55,7 +55,7 @@
                                       <td>
                                        <div class="d-flex align-items-center gap-3 fs-6">
                                         <a href="{{ route('about.edit', $about->id) }}" class="text-success btn btn-sm bts-success" ><i class="bi bi-pencil-fill"></i>EDIT</a>
-                                        <a href="" class="text-danger btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                        <a href="{{ route('about.delete', $about->id) }}" class="text-danger btn btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Delete" aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
                                        </div>
                                       </td>
                                     </tr>

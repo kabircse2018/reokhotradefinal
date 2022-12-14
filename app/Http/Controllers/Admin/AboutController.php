@@ -74,11 +74,11 @@ class AboutController extends Controller
 
 
 //__Edit
-public function edit($id)
-{
-    $abouts = About::find($id);
-    return view('admin.about.edit', compact('abouts'));
-}
+    public function edit($id)
+    {
+        $abouts = About::find($id);
+        return view('admin.about.edit', compact('abouts'));
+    }
 
 
 //__update
@@ -116,7 +116,17 @@ public function update(Request $request, $id)
     return redirect()->back()->with($notification);
 
 
-} 
+    } 
+
+//__DELETE__//
+    public function delete($id)
+    {
+        $about = About::find($id);
+        $about->delete();
+
+        $notification = array('message' => 'About Deleted Successfully', 'alert-type' => 'success');
+        return redirect()->back()->with($notification);
+    }    
 
 
 
