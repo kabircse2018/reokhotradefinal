@@ -27,7 +27,7 @@ class LoginController extends Controller
         }
         elseif(Auth::user()->is_admin == 0 ) // 0 is admin
         {
-            return redirect('/home')->with('message', 'Login Successfully');
+            return redirect('/')->with('message', 'Login Successfully');
         }
         else
         {

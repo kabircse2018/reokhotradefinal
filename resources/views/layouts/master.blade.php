@@ -4,8 +4,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GNKTEC</title>
-  <link rel="icon" href="{{ asset('public/admin')}}/images/favicon-32x32.png" type="image/png" />
+  <title>G-TechPoint</title>
+  <link rel="icon" href="{{ asset('public') }}/admin/storage/favicon.ico" type="image/png" />
   <!--plugins-->
   <link href="{{ asset('public/admin')}}/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
   <link href="{{ asset('public/admin')}}/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
