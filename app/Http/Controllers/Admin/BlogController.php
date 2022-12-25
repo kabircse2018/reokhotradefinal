@@ -50,7 +50,7 @@ class BlogController extends Controller
     $photoname = $photo_slug . '.' .$photo->getClientOriginalExtension();
 
     // $photo->move('public/files/galleries/', $photo); //without image Intervention
-    Image::make($photo)->save('public/files/blog/original/'. $photoname); //image Intervention
+    // Image::make($photo)->save('public/files/blog/original/'. $photoname); //image Intervention
     Image::make($photo)->fit(800,800)->save('public/files/blog/'. $photoname); //image Intervention
     Image::make($photo)->fit(200,170)->save('public/files/blog/thumbnails/'. $photoname); //image Intervention
     $blog->blog_image = 'public/files/blog/'.$photoname;
@@ -69,6 +69,18 @@ class BlogController extends Controller
     return redirect()->back()->with($notification);
 
     }
+
+
+
+//__DELETE__//
+public function delete($id)
+{
+    $blog = Blog::find($id);
+    $blog->delete();
+
+    $notification = array('message' => 'Blog Deleted Successfully', 'alert-type' => 'success');
+    return redirect()->back()->with($notification);
+}    
 
 
 }

@@ -21,9 +21,11 @@ class IndexController extends Controller
     {
 
         $slider = Slider::orderBy('id', 'desc')->first();
+        
         $sliders = DB::table('sliders')->where('menu_status', '0')->get();
         $StudyAbroadView = Studysubcategory::all()->where('menu_status','1');
         return view('frontend.index', compact('slider','sliders','StudyAbroadView'));
+
     }
 
 

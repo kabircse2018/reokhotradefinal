@@ -26,7 +26,47 @@
   display: none;
 }
 </style> -->
+
+<style media="screen">
+	.popup{
+		background-color: #ffffff;
+		width: 420px;
+	/*    padding: 30px 40px;*/
+		position: absolute;
+		transform: translate(-50%,-50%);
+		left: 50%;
+		top: 50%;
+		border-radius: 8px;
+		font-family: "Poppins",sans-serif;
+		display: none;
+		text-align: center;
+		box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+		z-index: 999;
+	}
+	
+	.popup button{
+		display: block;
+		 position: absolute;
+	  top: 0;
+	  right: 0;
+		margin: 5px 5px auto;
+		background-color: transparent;
+		font-size: 11px;
+		color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 20px;
+		height: 20px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+		</style>
+
+
 <body class="site-body style-v1">
+
+	
 
     @include('frontend.navbar')
 
@@ -43,7 +83,8 @@
 	<!-- Theme Script init() -->
 	<script src="{{asset('public/frontend')}}/js/script.js"></script>
 	<!-- End script -->
-
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<!-- include summernote css/js -->
 	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 	<script>

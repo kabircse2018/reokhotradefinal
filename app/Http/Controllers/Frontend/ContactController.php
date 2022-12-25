@@ -22,7 +22,7 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('test@reokhotrade.com')->send(new ContactMail($details));
+        Mail::to('nihongo@reokhotrade.com')->send(new ContactMail($details));
         return back()->with('mesasge_sent', 'Your message has dent been successfuly');
     }
 

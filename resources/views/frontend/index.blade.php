@@ -28,10 +28,10 @@
                                 <div class="animated fadeInRight">
                                     <h2><strong class="color-dark-navy">Study Abroad</strong></h2>
                                     <h5><strong class="color-dark-navy"> in your Favourite Country</strong></h5>
-                                    <div class="banner-cta">
+                                    {{-- <div class="banner-cta">
                                         <a class="btn color-dark-navy" href="{{url('/contact')}}">Find Out More</a>
                                         <a class="btn btn-alt btn-outline" href="{{ url('/apply') }}">Apply Now</a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 @endif
                             </div>
@@ -40,6 +40,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- // -->
         {{-- @foreach ($sliders as $item)
         <div class="item ">
@@ -100,6 +101,29 @@
     <span class="sr-only">Next</span>
     </a> --}}
 </div>
+
+
+<div class="popup">
+    <button id="close">X</button>
+    <img src="{{asset('public/image/tour.jpg')}}" alt="Reokho Trade">
+ </div>
+
+ <!--Script-->
+ <script type="text/javascript">
+     window.addEventListener("load", function(){
+         setTimeout(
+             function open(event){
+                 document.querySelector(".popup").style.display = "block";
+             },
+             1000
+         )
+     });
+
+     document.querySelector("#close").addEventListener("click", function(){
+         document.querySelector(".popup").style.display = "none";
+     });
+  </script>
+
 <!-- #end Banner/Slider -->
 <div class="section section-content section-pad">
     <div class="container">
@@ -173,13 +197,13 @@
             <div class="col-sm-3 res-s-bttm">
                <div class="box bg-white pd-x1 round">
                   <i class="fa fa-calendar-plus-o" style="font-size: xx-large; color: #0f4085;" aria-hidden="true"></i>
-                  <span style="font-size: large; font-weight: bold;">15 Years Establishment</span>
+                  <span style="font-size: large; font-weight: bold;">27 Years Establishment</span>
                </div>
             </div>
             <div class="col-sm-3 res-s-bttm">
                <div class="box bg-white pd-x1 round">
                   <i class="fa fa-building" style="font-size: xx-large; color: #0f4085;" aria-hidden="true"></i>
-                  <span style="font-size: large; font-weight: bold;">2 Branch</span>
+                  <span style="font-size: large; font-weight: bold;">1 Branch</span>
                </div>
             </div>
             <div class="col-sm-3 res-s-bttm">

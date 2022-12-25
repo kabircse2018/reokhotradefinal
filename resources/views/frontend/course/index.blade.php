@@ -83,7 +83,7 @@
                     
                     <p>IELTS tests all four language skills – listening, reading, writing and speaking. The Speaking test is a face-to-face interview with a certified Examiner. It is interactive and as close to a real-life situation as a test can get. Research shows that IELTS motivates test-takers to develop real and well-rounded English rather than learning by rote. This means your understanding of English is improved and valid for real life in an English-speaking country.</p>
                     <p>
-                        <p class="fw-bold"><strong>COURSE FEE</strong></p>
+                        <p class="fw-bold"><strong>COURSE FEES</strong></p>
                     <ul class="list-style">
                         
                         <li><em class="fa fa-book" aria-hidden="true"></em> Japanese language course fees <strong> 15,000/- </strong>     3 months </li>

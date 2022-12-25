@@ -120,7 +120,7 @@
         </ul>
       </li>
 
-      <li>
+      {{-- <li>
         <a href="#" class="has-arrow">
           <div class="parent-icon"><i class="bi bi-person-lines-fill"></i>
           </div>
@@ -135,7 +135,7 @@
           <li> <a href="#"><i class="bi bi-grid-fill"></i>view</a>
           </li>
         </ul>
-      </li>
+      </li> --}}
 
       <li>
         <a href="#" class="has-arrow">
@@ -154,7 +154,7 @@
         </ul>
       </li>
 
-      <li>
+      {{-- <li>
         <a href="#" class="has-arrow">
           <div class="parent-icon"><i class="bi bi-gear-fill"></i>
           </div>
@@ -186,7 +186,7 @@
           <li> <a href="#"><i class="bi bi-grid-fill"></i>view</a>
           </li>
         </ul>
-      </li>
+      </li> --}}
 
 
 

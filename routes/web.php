@@ -21,7 +21,7 @@ Route::get('/course', [App\Http\Controllers\Frontend\IndexController::class, 'co
 Route::get('/contact', [App\Http\Controllers\Frontend\IndexController::class, 'contact']);
 //For Contact send message
 Route::post('/send-message', [App\Http\Controllers\Frontend\ContactController::class, 'sendEmail'])->name('contact.send');
-Route::post('/apply-message', [App\Http\Controllers\Frontend\applyEmailController::class, 'applyEmail'])->name('apply.send');
+Route::post('/apply-message', [App\Http\Controllers\Frontend\ApplyEmailController::class, 'applyEmail'])->name('apply.send');
 
 Route::get('/about', [App\Http\Controllers\Frontend\IndexController::class, 'aboutView']);
 Route::get('/study-abroad/{cate_slug}', [App\Http\Controllers\Frontend\IndexController::class, 'studycategoryView']);
@@ -71,7 +71,7 @@ Route::prefix('admin')->middleware(['auth','IsAdmin'])->group(function(){
     Route::post('gallery/store', [App\Http\Controllers\Admin\GalleryController::class, 'store']);
     // Route::get('category/edit/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'edit']);
     // Route::put('category/update/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'update']);
-    // Route::get('category/delete/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'delete']);
+    Route::get('gallery/delete/{id}', [App\Http\Controllers\Admin\GalleryController::class, 'delete'])->name('gallery.delete');
 
 
     //__Study Route__//
@@ -107,7 +107,7 @@ Route::prefix('admin')->middleware(['auth','IsAdmin'])->group(function(){
     Route::post('blog/store', [App\Http\Controllers\Admin\BlogController::class, 'store']);
     // Route::get('category/edit/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'edit']);
     // Route::put('category/update/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'update']);
-    // Route::get('category/delete/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'delete']);
+    Route::get('blog/delete/{id}', [App\Http\Controllers\Admin\BlogController::class, 'delete'])->name('blog.delete');
 
 
 

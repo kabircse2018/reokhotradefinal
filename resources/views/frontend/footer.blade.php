@@ -9,23 +9,23 @@
                     <!-- Each Widget -->
                     <div class="wgs wgs-footer wgs-text">
                         <div class="wgs-content">
-                            <p><img src="{{asset('public/frontend')}}/image/logo.png" srcset="{{asset('public/frontend')}}/image/logo2x.png 2x" alt="Reokho Trade"></p>
+                            {{-- <p><img src="{{asset('public/frontend')}}/image/logo.png" srcset="{{asset('public/frontend')}}/image/logo2x.png 2x" alt="Reokho Trade"></p> --}}
                             @if(session()->get('lang') == 'japan')
                             <h3 class="wgs-title"><strong>会社概要</strong></h3>
                             <p><a href="{{asset('public/frontend')}}/image/reokho-trade-International-Company-Profile-full-final.pdf"><em class="fa fa-file-pdf-o"></em>Reokho Trade International プライバシー</a></p>
-                            <ul class="social">
+                            {{-- <ul class="social">
                                 <li><a href="https://www.facebook.com/reokhoint"><em class="fa fa-facebook" aria-hidden="true"></em></a></li>
                                 <li><a href="#"><em class="fa fa-instagram" aria-hidden="true"></em></a></li>
                                 <li><a href="#"><em class="fa fa-linkedin" aria-hidden="true"></em></a></li>
-                            </ul>
+                            </ul> --}}
                              @else
                             <h3 class="wgs-title"><strong>Company Profile</strong></h3>
-                            <p><a href="{{asset('public/frontend')}}/image/reokho-trade-International-Company-Profile-full-final.pdf"><em class="fa fa-file-pdf-o"></em> Reokho Trade International Prifile</a></p>
-                            <ul class="social">
+                            <p><a href="{{asset('public/frontend')}}/image/reokho-trade-International-Company-Profile-full-final.pdf"><em class="fa fa-file-pdf-o"></em> Reokho Trade International Profile</a></p>
+                            {{-- <ul class="social">
                                 <li><a href="https://www.facebook.com/reokhoint"><em class="fa fa-facebook" aria-hidden="true"></em></a></li>
                                 <li><a href="#"><em class="fa fa-instagram" aria-hidden="true"></em></a></li>
                                 <li><a href="#"><em class="fa fa-linkedin" aria-hidden="true"></em></a></li>
-                            </ul>
+                            </ul> --}}
                             @endif
 
                         </div>
@@ -39,21 +39,19 @@
                         @if(session()->get('lang') == 'japan')
                         
                         <div class="wgs-content">
-                            <p><strong>学生ビザ申請に必要な書類</strong></p>
+                            {{-- <p><strong>学生ビザ申請に必要な書類</strong></p> --}}
                             <p>就学許可証を申請するには、次のものが必要です。</br>
                                 *** 学業証明書とマークシット。</br>
                                 *** 有効なパスポート。</br>
                                 *** 出生証明書。
                             </p>
                             
-                            {{-- <h3 class="wgs-title"><strong>Company Profile</strong></h3>
-                            <p><a href="{{asset('public/frontend')}}/image/reokho-trade-International-Company-Profile.pdf"><em class="fa fa-file-pdf-o"></em> Reokho Trade International Prifile</a></p> --}}
-                        </div>
+                            </div>
                         @else
 
                         <div class="wgs-content">
-                            <p><strong>Documents required for Apply  student visa</strong></p>
-                            <p>To apply for your study permit, you will need:</br>
+                            {{-- <p><strong>Documents required for Apply  student visa</strong></p> --}}
+                            {{-- <p>To apply for your study permit, you will need:</br> --}}
                                 *** Your Academic Certificates & Markshits.</br>
                                 *** A valid passport.</br>
                                 *** Birth Certificate.
@@ -67,39 +65,7 @@
                     </div>
                     <!-- End Widget -->
                 </div>
-                {{-- <div class="footer-col col-md-2 col-sm-6 res-m-bttm">
-                    <!-- Each Widget -->
-                    <div class="wgs wgs-footer wgs-menu">
-                        @if(session()->get('lang') == 'japan')
-                        <h5 class="wgs-title">リンク</h5>
-                        <div class="wgs-content">
-                            <ul class="menu">
-                                <li><a href="{{url('/')}}">家</a></li>
-                                <li><a href="{{url('/about')}}">私たちに関しては</a></li>
-                                <li><a href="{{url('/service')}}">>私たちのサービス</a></li>
-                                <li><a href="{{url('/contact')}}">コンタクト</a></li>
-                                <li><a href="{{url('/blog')}}">ブログ</a></li>
-                                <li><a href="{{ url('/apply') }}">申し込み</a></li>
-                            </ul>
-                        </div>
-                        @else
-                        <h5 class="wgs-title">Links</h5>
-                        <div class="wgs-content">
-                            <ul class="menu">
-                                <li><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="{{url('/about')}}">About Us</a></li>
-                                <li><a href="{{url('/service')}}">Our Services</a></li>
-                                <li><a href="{{url('/contact')}}">Contact</a></li>
-                                <li><a href="{{url('/blog')}}">Blog</a></li>
-                                <li><a href="{{ url('/apply') }}">Apply Now</a></li>
-                            </ul>
-                        </div>
-                        @endif
-
-
-                    </div>
-                    <!-- End Widget -->
-                </div> --}}
+                
 
                 <div class="footer-col col-md-5 col-sm-6">
                     <!-- Each Widget -->
@@ -117,16 +83,14 @@
                                 <span>+880 1886613121</span>
                                 <em class="fa fa-phone" style="font-size:20px" aria-hidden="true"></em>&nbsp
                                 <span> +880-2-48317223</span>
-
                             </p>
-
                         </div>
                         @else
-                        <h5 class="wgs-title">Get In Touch</h5>
+                        {{-- <h5 class="wgs-title">Get In Touch</h5> --}}
                         <div class="wgs-content">
                             <p><strong>Reokho Trade Internetional</strong><br>
-                                72,Advance Milinda, Room No-409, 3rd floor, Mouchak Moor (Opposite of fortune shopping mall), Malibagh Dhaka-1219 Bangladesh.</p>
-                            <p>
+                                72,Advance Milinda, Room No-409, 3rd floor, Mouchak Moor , Malibagh Dhaka-1219 Bangladesh.</p>
+                            {{-- <p>
                                 <em class="fa fa-envelope-o" style="font-size:18px" aria-hidden="true"></em>&nbsp
                                 <a href="mailto:info@reokhotrade.com"> info@reokhotrade.com</a>
                                 <br>
@@ -134,9 +98,7 @@
                                 <span>+880 1886613121</span>
                                 <em class="fa fa-phone" style="font-size:20px" aria-hidden="true"></em>&nbsp
                                 <span> +880-2-48317223</span>
-
-                            </p>
-
+                            </p> --}}
                         </div>
                         @endif
 

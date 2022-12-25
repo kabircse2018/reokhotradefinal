@@ -145,9 +145,30 @@
                         <li><em class="fa fa-mobile" aria-hidden="true"></em>
                             Phone : +880 1886613121</span>
                         </li>
-                        <li><em class="fa fa-envelope" aria-hidden="true"></em>
+                        {{-- <li><em class="fa fa-envelope" aria-hidden="true"></em>
                             <span>Email : <a href="#">info@reokhotrade.com</a></span>
+                        </li> --}}
+                    </ul>
+
+                    <ul class="contact-list">
+                        {{-- <strong>Japan Office Address :</strong> --}}
+                        <li><em class="fa fa-map" aria-hidden="true"></em>
+                            @if(session()->get('lang') == 'japan')
+                            <span>Japan Office Address : 〒332-0016 
+                                2–3–6 Saiwaicho, Kawaguchi City, 
+                                Saitama Prefecture Medical  Mansion.  505</span>
+                            @else
+                            <span>Japan Office Address : 〒332-0016 
+                                2–3–6 Saiwaicho, Kawaguchi City, 
+                                Saitama Prefecture Medical  Mansion.  505</span>
+                            @endif
                         </li>
+                        <li><em class="fa fa-mobile" aria-hidden="true"></em>
+                            Phone : +81-070-4202-5274</span>
+                        </li>
+                        {{-- <li><em class="fa fa-envelope" aria-hidden="true"></em>
+                            <span>Email : <a href="#">info@reokhotrade.com</a></span>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
@@ -155,8 +176,7 @@
         </div>
 
             <!-- Feture Row  #end -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116815.37240340517!2d90.34217702878472!3d23.80151084262992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b919114fde95%3A0xcbae96ee71d17678!2sREOKHOTRADE%20INTERNATIONAL!5e0!3m2!1sen!2sbd!4v1671048075155!5m2!1sen!2sbd" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.037366433424!2d90.41051351498129!3d23.746046884591546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85e958bc0e7%3A0x3e47442cf9ca8995!2sReokho%20Trade%20Int.!5e0!3m2!1sen!2sbd!4v1671891286164!5m2!1sen!2sbd" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
 </div>
 @endsection

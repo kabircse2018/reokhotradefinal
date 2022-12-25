@@ -32,7 +32,7 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
     $validated = $request->validate([
-        'gallery_name' => 'required|unique:galleries|max:255',
+        'gallery_name' => 'required',
     ]);
 
     //photo slug
@@ -47,10 +47,11 @@ class GalleryController extends Controller
 
     // //work with image
     $photo = $request->gallery_image;
-    $photoname = $photo_slug . '.' .$photo->getClientOriginalExtension();
+    $rand = rand(1111, 9999);
+    $photoname = $photo_slug . $rand .'.' .$photo->getClientOriginalExtension();
 
     // $photo->move('public/files/galleries/', $photo); //without image Intervention
-    Image::make($photo)->save('public/files/galleries/original/'. $photoname); //image Intervention
+    // Image::make($photo)->save('public/files/galleries/original/'. $photoname); //image Intervention
     Image::make($photo)->fit(800,450)->save('public/files/galleries/'. $photoname); //image Intervention
     Image::make($photo)->fit(200,170)->save('public/files/galleries/thumbnails/'. $photoname); //image Intervention
     $blog->gallery_image = 'public/files/galleries/'.$photoname;
@@ -70,6 +71,18 @@ class GalleryController extends Controller
 
     }
 
+
+
+    
+//__DELETE__//
+public function delete($id)
+{
+    $blog = Gallery::find($id);
+    $blog->delete();
+
+    $notification = array('message' => 'Gallery Deleted Successfully', 'alert-type' => 'success');
+    return redirect()->back()->with($notification);
+}    
 
 
 

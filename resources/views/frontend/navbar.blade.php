@@ -98,7 +98,7 @@
 								</ul>
 							</li>
 
-							<li><a href="{{url('/service')}}">Our Services</a></li>
+							{{-- <li><a href="{{url('/service')}}">Our Services</a></li> --}}
 							<li><a href="{{url('/course')}}">Course</a></li>
 							<li><a href="{{url('/gallery')}}">Gallery</a></li>
 							<li><a href="{{url('/contact')}}">Contact</a></li>
@@ -106,7 +106,19 @@
 							<li><a href="{{ url('/apply') }}">Apply</a></li>
 
 							
-						@endif						
+						@endif	
+						<li>
+							@if(Auth::Check())
+							<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+								Logout
+							</a>
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+								@csrf
+							</form>
+							@else
+							
+							@endif
+						</li>					
 					</ul>
 
 				</nav>

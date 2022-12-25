@@ -23,28 +23,25 @@
                     </div>
                 @else
                      <div class="banner-text">
-                    <p class="">about us</p>
+                    <p class="">About us</p>
                 </div>
                 <div class="page-breadcrumb">
                     <ul class="breadcrumb">
                         <li><a href="{{url('/')}}">Home</a></li>
-                        <li class="active"><a href="{{url('/about')}}"><span>about us</span></a></li>
+                        <li class="active"><a href="{{url('/about')}}"><span>About us</span></a></li>
                     </ul>
                 </div>
-                
                 @endif
-                
-
             </div>
         </div>
     </div>
-    <div class="banner-bg imagebg">
-        <img src="image/banner-inner.jpg" alt="" />
-    </div>
+
 </div>
 <!-- End Banner -->
 
-
+<div class="banner-bgimagebg">
+        <img src="{{ asset('public/image/about/01.jpg') }}" alt="" />
+</div>
 
 <!-- Content -->
 <div class="section section-content section-pad">

@@ -34,6 +34,7 @@ class LoginController extends Controller
             return redirect('/')->with('message', 'Login Successfully');
         }
 
+
     }
 
     /**

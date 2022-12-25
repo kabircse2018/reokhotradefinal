@@ -25,7 +25,7 @@ class ApplyEmailController extends Controller
         ];
        
 
-        Mail::to('test@reokhotrade.com')->send(new ApplyMail($applydata));
+        Mail::to('nihongo@reokhotrade.com')->send(new ApplyMail($applydata));
         return back()->with('message_sent', 'Your message has dent been successfuly');
     }
 }

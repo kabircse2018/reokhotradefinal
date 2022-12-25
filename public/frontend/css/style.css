@@ -2423,7 +2423,7 @@ form label.error {
     position: relative;
     width: 100%;
     padding: 15px 0;
-    min-height: 60px;
+    /* min-height: 60px; */
 }
 .banner-static:not(.has-bg-image):not([class*="bg-"]) {
     background-color: #0871db;
